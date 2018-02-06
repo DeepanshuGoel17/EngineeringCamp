@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+    <title>
+        The Form Selector
+    </title>
+</head>
+
+<body>
+    <select id ="select" >
+    <option value="select" default>------------Select-----------</option>
+    <option value ="car">Enter the Car information</option>
+    <option value ="bike">Enter the Bike Information</option>
+    </select>
+
+    <div id = "car" hidden = "hidden">
+        <form action="Data.html">
+            <h1>This is For Car::::<br></h1>
+
+            Car Company:<br>
+            <input type="text" id="carName"><br> Car model:<br>
+            <input type="text" id="carModel"><br> Colour:
+            <br>
+            <input type="text" id="carColor"><br> Number :<br>
+            <input type="text" id="carNumber"><br>
+        </form>
+        <button id ="sub">Click me</button>
+    </div>
+    <div id="bike" hidden="hidden">
+        <form action="">
+            <h1>This is For Bike::::::<br></h1>
+            Bike Company:<br>
+            <input type="text" id="bName"><br> Bike model:<br>
+            <input type="text" id="bmodel"><br> Colour:
+            <br>
+            <input type="text" id="bcolor"><br> Number :<br>
+            <input type="text" id="bnumber"><br>
+        </form>
+        <button id="sub1">Click me</button>
+    </div>
+    <div id="adddetail"></div>
+
+</body>
+<script src="./bundle.js"></script>
+
+</html>

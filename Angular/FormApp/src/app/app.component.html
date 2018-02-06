@@ -1,0 +1,13 @@
+<h1>
+  {{title}}
+  {{selectValue}}
+</h1>
+<p *ngIf ="">Helloo</p>
+<select id ="select"  [(ngModel)] = "selectValue" >
+    <option value= "select" default>------------Select-----------</option>
+    <option value = "car">Enter the Car information</option>
+    <option value = "bike">Enter the Bike Information</option>
+    </select>
+<p *ngIf ="selectValue == 'car'"><app-car (notify) ="displayInfo($event)"></app-car></p>
+<p *ngIf ="selectValue == 'bike'"><app-bike (notify) ="displayInfo($event)"></app-bike></p>
+<p *ngIf ="flag == '1'"><app-display [obj] = 'storeInfo'></app-display></p>
